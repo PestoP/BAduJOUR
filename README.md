@@ -2,6 +2,15 @@
 
 > A Vue.js project
 
+## Install semantic-UI
+npm install semantic-ui --save
+cd semantic/
+gulp build
+
+And in my main.js:
+
+import '../semantic/dist/semantic.css'
+
 ## Build Setup
 
 ``` bash

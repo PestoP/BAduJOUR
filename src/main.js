@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 
-//Semantic-UI css librairy
+// Semantic-UI css librairy
 import '../semantic/dist/semantic.css'
 
 /* eslint-disable no-new */

@@ -18,28 +18,22 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: '',
-      components: {
-        navCircle: require('./components/NavCircle.vue')
-      },
-      children: [
-        {
-          path: '/histoire',
-          name: 'story',
-          component: require('./components/Story.vue')
-        }, {
-          path: '/proposer',
-          name: 'propose',
-          component: require('./components/Propose.vue')
-        }, {
-          path: '/ba',
-          name: 'ba',
-          component: require('./components/Ba.vue')
-        }, {
-          path: '*',
-          redirect: '/'
-        }
-      ]
+      name: ''
+    }, {
+      path: '/histoire',
+      name: 'story',
+      component: require('./components/Story.vue')
+    }, {
+      path: '/proposer',
+      name: 'propose',
+      component: require('./components/Propose.vue')
+    }, {
+      path: '/ba',
+      name: 'ba',
+      component: require('./components/Ba.vue')
+    }, {
+      path: '*',
+      redirect: '/'
     }
   ]
 })

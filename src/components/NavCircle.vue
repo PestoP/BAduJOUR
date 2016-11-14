@@ -4,7 +4,6 @@
     <router-link :to="{name: 'ba'}" tag="button" class="circle_button first block"><i class="icon heart center_block"></i></router-link>
     <router-link :to="{name: 'story'}" tag="button" class="circle_button second block"><i class="icon book center_block"></i></router-link>
     <router-link :to="{name: 'propose'}" tag="button"  class="circle_button third block"><i class="icon mail center_block"></i></router-link>
-    <router-view></router-view>
   </div>
 </template>
 

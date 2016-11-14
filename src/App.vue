@@ -1,18 +1,11 @@
 <template>
   <div id="app">
-    <navCircle></navCircle>
+    <router-view name="navCircle"></routerview>
   </div>
 </template>
 
 <script>
-import navCircle from './components/navCircle'
-
-export default {
-  name: 'app',
-  components: {
-    navCircle
-  }
-}
+  export default { }
 </script>
 
 <style>

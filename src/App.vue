@@ -1,20 +1,24 @@
 <template>
   <div id="app">
-    <navCircle></navCircle>
+    <NavCircle></NavCircle>
+    <About></About>
     <router-view></routerview>
   </div>
 </template>
 
 <script>
-  import navCircle from './components/navCircle'
+  import NavCircle from './components/NavCircle'
+  import About from './components/About'
+
   export default {
     name: 'app',
     components: {
-      navCircle
+      NavCircle,
+      About
     }
   }
 </script>
  
-<style>
-#app {}
+<style lang="scss">
+
 </style>

@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <NavCircle></NavCircle>
-    <About></About>
+    <AboutButton></AboutButton>
     <router-view></routerview>
   </div>
 </template>
 
 <script>
   import NavCircle from './components/NavCircle'
-  import About from './components/About'
+  import AboutButton from './components/AboutButton'
 
   export default {
     name: 'app',
     components: {
       NavCircle,
-      About
+      AboutButton
     }
   }
 </script>

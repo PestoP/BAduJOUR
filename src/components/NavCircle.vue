@@ -14,11 +14,12 @@ export default { }
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../styles/all";
-// diamètre du demi-cercle
-$circle_diameter: 90vh;
-$IsLeftSide: false;
 
 .nav_circle {
+  // paramètres pour la mixin demi-cercle
+  $circle_diameter: 90vh;
+  $IsLeftSide: false;
+  
   @include demi-circle($circle_diameter, $IsLeftSide);
   top: 50vh - $circle_diameter/2;
   left: -(35/100)*$circle_diameter;

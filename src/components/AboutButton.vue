@@ -13,11 +13,10 @@ export default { }
 <style scoped lang="scss">
 @import "../styles/all";
 
-// diamètre du demi-cercle
 $circle_diameter: 20vh;
-$IsLeftSide: true;
 
 .about_circle {
+  $IsLeftSide: true;
   @include demi-circle($circle_diameter, $IsLeftSide);
   top: 50vh - $circle_diameter/2;
   right: -(10/100)*$circle_diameter;

@@ -32,6 +32,10 @@ const router = new VueRouter({
       name: 'ba',
       component: require('./components/Ba.vue')
     }, {
+      path: '/about',
+      name: 'about',
+      component: require('./components/About.vue')
+    }, {
       path: '*',
       redirect: '/'
     }

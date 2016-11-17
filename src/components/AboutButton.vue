@@ -1,8 +1,8 @@
 <template>
-  <div class="about_circle">
+ <router-link :to="{name: 'about'}" tag="div"  class="about_circle">
     <i class="about_icon icon inverted big caret left"></i>
     <span class="about_text vertical_text">À propos</span>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -22,6 +22,7 @@ $circle_diameter: 20vh;
   right: -(10/100)*$circle_diameter;
   position: absolute;
   background-color: #d4d4d5;
+  cursor:pointer;
 }
 
 .about_icon {

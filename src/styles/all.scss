@@ -1,0 +1,12 @@
+// créer un demi-cercle, du coté gauche, ou droit
+@mixin demi-circle($circle_diameter, $IsLeftSide) {
+  height: $circle_diameter;
+  width: $circle_diameter/2;
+  border: solid 1px black;
+
+  @if $IsLeftSide {
+	border-radius: $circle_diameter 0 0 $circle_diameter;
+  } @else {
+  	border-radius: 0 $circle_diameter $circle_diameter 0;
+  }
+}

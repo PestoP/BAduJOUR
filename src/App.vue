@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <NavCircle></NavCircle>
+    <AboutButton></AboutButton>
+    <router-view></routerview>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+  import NavCircle from './components/NavCircle'
+  import AboutButton from './components/AboutButton'
 
-export default {
-  name: 'app',
-  components: {
-    Hello
+  export default {
+    name: 'app',
+    components: {
+      NavCircle,
+      AboutButton
+    }
   }
-}
 </script>
+ 
+<style lang="scss">
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

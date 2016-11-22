@@ -18,7 +18,8 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: ''
+      name: '',
+      redirect: {name: 'ba'}
     }, {
       path: '/histoire',
       name: 'story',
@@ -32,7 +33,7 @@ const router = new VueRouter({
       name: 'ba',
       component: require('./components/Ba.vue')
     }, {
-      path: '/about',
+      path: '/a-propos',
       name: 'about',
       component: require('./components/About.vue')
     }, {

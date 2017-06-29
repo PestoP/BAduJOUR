@@ -47,6 +47,9 @@ router.beforeEach((to, from, next) => {
   document.body.className = to.name
   next()
 })
+
+router.replace('ba')
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

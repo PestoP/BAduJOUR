@@ -43,6 +43,10 @@ const router = new VueRouter({
   ]
 })
 
+router.beforeEach((to, from, next) => {
+  document.body.className = to.name
+  next()
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

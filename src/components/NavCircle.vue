@@ -38,6 +38,10 @@ $button_diameter: 5vh;
   cursor: pointer;
   outline: none;
   
+  i {
+    font-size: 1.3rem!important;
+  }
+
   &.yellow_button {
     background-color: lighten($yellow, 0.3);
     border-color: $yellow_darken;

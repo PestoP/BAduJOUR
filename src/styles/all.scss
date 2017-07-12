@@ -2,11 +2,43 @@
 @mixin demi-circle($circle_diameter, $IsLeftSide) {
   height: $circle_diameter;
   width: $circle_diameter/2;
-  border: solid 1px black;
+  border: solid 1px #b1b1b1;
+
 
   @if $IsLeftSide {
 	border-radius: $circle_diameter 0 0 $circle_diameter;
   } @else {
   	border-radius: 0 $circle_diameter $circle_diameter 0;
   }
+}
+
+$green: rgb(175, 255, 175);
+$green_darken: #007d00;
+$yellow: rgb(255, 253, 187);
+$yellow_darken: #8a8500;
+$blue: rgb(153, 231, 255);
+$blue_darken: #006484;
+
+.green {
+  color: $green
+}
+
+.blue {
+  color: $blue
+}
+
+.yellow {
+  color: $yellow
+}
+
+.green_darken {
+	color: $green_darken
+}
+
+.blue_darken {
+  color: $blue_darken
+}
+
+.yellow_darken {
+  color: $yellow_darken
 }

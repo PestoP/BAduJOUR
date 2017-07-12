@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="nav_circle"></div>
-    <router-link :to="{name: 'ba'}" tag="button" class="circle_button first block"><i class="icon heart center_block"></i></router-link>
-    <router-link :to="{name: 'story'}" tag="button" class="circle_button second block"><i class="icon book center_block"></i></router-link>
-    <router-link :to="{name: 'propose'}" tag="button"  class="circle_button third block"><i class="icon mail center_block"></i></router-link>
+    <router-link :to="{name: 'ba'}" tag="button" class="circle_button yellow_button first block"><i class="icon yellow_darken heart center_block"></i></router-link>
+    <router-link :to="{name: 'story'}" tag="button" class="circle_button green_button second block"><i class="icon green_darken book center_block"></i></router-link>
+    <router-link :to="{name: 'propose'}" tag="button"  class="circle_button blue_button third block"><i class="icon blue_darken mail center_block"></i></router-link>
   </div>
 </template>
 
@@ -35,6 +35,41 @@ $button_diameter: 5vh;
   border-radius: $button_diameter/2;
   border: solid 1px black;
   position: absolute;
+  cursor: pointer;
+  outline: none;
+  
+  &.yellow_button {
+    background-color: lighten($yellow, 0.3);
+    border-color: $yellow_darken;
+
+    &:hover {
+      background-color: darken($yellow, 0.3);
+    }
+  } 
+
+  &.green_button {
+    background-color: lighten($green, 0.3);
+    border-color: $green_darken;
+
+    &:hover {
+      background-color: darken($green, 0.3);
+    }
+  }
+
+  &.blue_button {
+    background-color: lighten($blue, 0.3);
+    border-color: $blue_darken;
+
+    &:hover {
+      background-color: darken($blue, 0.3);
+    }
+  } 
+
+  &:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
 
   &.first {
     top: 25vh;

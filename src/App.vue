@@ -20,16 +20,20 @@
 </script>
  
 <style lang="scss">
+
 .ba {
   height:100%;
-  background: rgba(0,255,0, 0.15) url(../static/geometry.png);
+  background-image: url(../static/geometry.png);
 }
+
 .propose {
   height:100%;
-  background: rgba(0,255,0, 0.15) url(../static/symphony.png);
+  background-image: url(../static/symphony.png);
 }
+
 .story {
   height:100%;
-  background: rgba(0,255,0, 0.15) url(../static/giftly.png);
+  background-image: url(../static/giftly.png);
 }
+
 </style>

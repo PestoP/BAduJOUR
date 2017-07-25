@@ -43,29 +43,29 @@ $button_diameter: 5vh;
   }
 
   &.yellow_button {
-    background-color: lighten($yellow, 0.3);
+    background-color: $yellow;
     border-color: $yellow_darken;
 
     &:hover {
-      background-color: darken($yellow, 0.3);
+      background-color: $yellow_darken;
     }
   } 
 
   &.green_button {
-    background-color: lighten($green, 0.3);
+    background-color: $green;
     border-color: $green_darken;
 
     &:hover {
-      background-color: darken($green, 0.3);
+      background-color: $green_darken;
     }
   }
 
   &.blue_button {
-    background-color: lighten($blue, 0.3);
+    background-color: $blue;
     border-color: $blue_darken;
 
     &:hover {
-      background-color: darken($blue, 0.3);
+      background-color: $blue_darken;
     }
   } 
 

@@ -31,7 +31,14 @@ export default { }
   }
 
   .ba_du_jour {
+    margin-left: 20vw;
+    margin-right: 20vw;
     padding-top: 24vh;
+
+    span {
+      line-height: 150%;
+      font-size: 30px;
+    }
   }
 
   .do_it {

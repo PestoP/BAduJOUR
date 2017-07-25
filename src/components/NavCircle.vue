@@ -47,7 +47,7 @@ $button_diameter: 5vh;
     border-color: $yellow_darken;
 
     &:hover {
-      background-color: $yellow_darken;
+      border-color: $yellow_darken;
     }
   } 
 
@@ -56,7 +56,7 @@ $button_diameter: 5vh;
     border-color: $green_darken;
 
     &:hover {
-      background-color: $green_darken;
+      border-color: $green_darken;
     }
   }
 
@@ -65,14 +65,12 @@ $button_diameter: 5vh;
     border-color: $blue_darken;
 
     &:hover {
-      background-color: $blue_darken;
+      border-color: $blue_darken;
     }
   } 
 
   &:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(2px);
+    transform: rotate(25deg);
   }
 
   &.first {

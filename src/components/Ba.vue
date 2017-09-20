@@ -2,7 +2,7 @@
   <div class="ba_du_jour_container">
     <h1 class="title">La bonne action du jour</h1>
     <p class="ba_du_jour">
-      <span>Dire bonjour à toutes les personnes qui croiseront ton regard</span>
+      <span>{{ getOne() }}</span>
     </p>
     <!-- <button class="do_it">Ok, je la fait !!</button> -->
     <div class="ui labeled button do_it" tabindex="0" v-on:click="incrementCounter">
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import shuffle from 'lodash/shuffle'
 export default {
   data () {
     return {
@@ -32,6 +33,18 @@ export default {
       } else {
         alert('Tu as déja fait ta BA du jours ;)')
       }
+    },
+    getAllBas () { // TODO faire un back et récupérer des vrais BAs
+      return shuffle([
+        "Dire bonjour à toutes les personnes qui croiseront ton regard",
+        "Laisser le passage à un automobiliste qui semble pressé",
+        "Offrir un ticket de métro (ou d’autobus) à quelqu’un qui semble manquer d’argent.",
+        "Monter les bagages dans le train de quelqu’un qui peine.",
+        "Fumer un énorme buzz"
+      ])
+    },
+    getOne () {
+      return this.getAllBas()[0];
     }
   }
 }

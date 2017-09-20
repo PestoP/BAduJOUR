@@ -25,12 +25,12 @@ export default {
   },
   methods: {
     incrementCounter () {
-      const canIncrement = sessionStorage.getItem('hasDoneBA') /* eslint-disable */
-      if (canIncrement) {
-        sessionStorage.setItem('hasDoneBA', true) /* eslint-disable */
+      const hasDoneBA = window.sessionStorage.getItem('hasDoneBA') /* eslint-disable */
+      if (!hasDoneBA) {
+        window.sessionStorage.setItem('hasDoneBA', true) 
         this.nbClick++
       } else {
-        console.log('pd tu as déja cliqué')
+        alert('Tu as déja fait ta BA du jours ;)')
       }
     }
   }

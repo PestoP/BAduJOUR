@@ -10,12 +10,20 @@
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "commitmsg": "conventional-changelog-lint -e",
+    "precommit": "yarn lint_perso",
+    "commit-lint": "conventional-changelog-lint --from=HEAD~1",
+    "code-lint": "standard",
+    "lint_perso": "yarn code-lint && yarn commit-lint"
   },
   "dependencies": {
+    "conventional-changelog-lint": "^2.1.1",
+    "husky": "^0.14.3",
     "node-sass": "^3.10.1",
     "sass-loader": "^4.0.2",
     "semantic-ui": "^2.2.6",
+    "standard": "^10.0.3",
     "vue": "^2.0.1",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.1",

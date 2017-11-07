@@ -11,10 +11,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "commitmsg": "conventional-changelog-lint -e",
-    "precommit": "yarn lint_perso",
-    "commit-lint": "conventional-changelog-lint --from=HEAD~1",
-    "code-lint": "standard",
-    "lint_perso": "yarn code-lint && yarn commit-lint"
+    "precommit": "standard"
   },
   "dependencies": {
     "conventional-changelog-lint": "^2.1.1",

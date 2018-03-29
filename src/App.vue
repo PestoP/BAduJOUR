@@ -7,33 +7,33 @@
 </template>
 
 <script>
-  import NavCircle from './components/NavCircle'
-  import AboutButton from './components/AboutButton'
+import NavCircle from './components/NavCircle'
+import AboutButton from './components/AboutButton'
 
-  export default {
-    name: 'app',
-    components: {
-      NavCircle,
-      AboutButton
-    }
+export default {
+  name: 'app',
+  components: {
+    NavCircle,
+    AboutButton
   }
+}
 </script>
- 
+
 <style lang="scss">
 
 .ba {
   height:100%;
-  background-image: url(../static/geometry.png);
+  background-image: url(./assets/geometry.png);
 }
 
 .propose {
   height:100%;
-  background-image: url(../static/symphony.png);
+  background-image: url(./assets/symphony.png);
 }
 
 .story {
   height:100%;
-  background-image: url(../static/giftly.png);
+  background-image: url(./assets/giftly.png);
 }
 
 </style>
